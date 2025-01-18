@@ -1,0 +1,77 @@
+body{
+    width: auto;
+}
+header img{
+    width: 100%;
+}
+
+.gift-collection__head{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gift-collection__head__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gift-collection__head__textbox{
+    padding-left: 79px;
+    padding-right: 79px;
+}
+.gift-collection__head__textbox__title{
+    font-family: Baskerville URW;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: .05em;
+    line-height: 48px;
+    text-align: left;
+    color: #555;
+}
+
+.gift-collection__head__textbox__text{
+    font-family: YuMincho;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .05em;
+    line-height: 32px;
+    text-align: left;
+    color: #555;
+}
+.gift-collection__head__inner img{
+    width: 62.65%;
+}
+
+.gift-collection__nav__pc{
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gift-collection__nav__pc__link{
+    font-family: Hiragino Sans;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .06em;
+    line-height: 26px;
+    text-align: left;
+    color: #555;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 0 28px;
+}
+.holiday__head{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.holiday__head__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.holiday__head__inner img{
+    width: 62.65%;
+}
