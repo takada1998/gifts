@@ -14,6 +14,7 @@ header img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 90px;
 }
 .gift-collection__head__textbox{
     padding-left: 79px;
@@ -74,4 +75,39 @@ header img{
 }
 .holiday__head__inner img{
     width: 62.65%;
+}
+
+.holiday__head__textbox{
+    padding-left: 79px;
+    padding-right: 79px;
+}
+.holiday__head__textbox__title{
+    font-family: Baskerville URW;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: .05em;
+    line-height: 48px;
+    text-align: left;
+    color: #555;
+}
+.holiday__head__textbox__text{
+    font-family: Hiragino Sans;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .05em;
+    line-height: 26px;
+    text-align: left;
+    color: #555;
+}
+.holiday__head__textbox__item{
+    font-family: Hiragino Sans;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: .05em;
+    line-height: 22px;
+    text-align: left;
+    color: #9d9d9d;
+    text-decoration: none;
+    display: block;
+    padding-top: 18px;
 }
