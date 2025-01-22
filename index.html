@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="ありがとうの気持ちを丁寧に包んで、ひと手間かけたラッピングで、想いが伝わるギフトをご提案します。" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="/image/gift00.jpeg" />
+    <meta property="og:title" content="GIFT">
+    <meta property="og:description" content="ありがとうの気持ちを丁寧に包んで、ひと手間かけたラッピングで、想いが伝わるギフトをご提案します。">
+    <meta property="og:image" content="https://takada1998.github.io/gifts/image/gift00.jpeg">
+    <title>GIFT</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,26 +43,42 @@
             </div>
         </div>
         <nav class="gift-collection__nav__pc">
-            <a href="/" class="gift-collection__nav__pc__link">ホリデーギフト</a>
-            <a href="/" class="gift-collection__nav__pc__link">引越し祝い</a>
-            <a href="/" class="gift-collection__nav__pc__link">結婚祝い</a>
-            <a href="/" class="gift-collection__nav__pc__link">出産祝い</a>
-            <a href="/" class="gift-collection__nav__pc__link">プチギフト</a>
+            <a href="#holiday-gift" class="gift-collection__nav__pc__link">
+                ホリデーギフト
+                <span class="gift-collection__nav__pc__arrow"></span>
+            </a>
+            <a href="#moving-gift" class="gift-collection__nav__pc__link">
+                引越し祝い
+                <span class="gift-collection__nav__pc__arrow"></span>
+            </a>
+            <a href="#marriage-gift" class="gift-collection__nav__pc__link">
+                結婚祝い
+                <span class="gift-collection__nav__pc__arrow"></span>
+            </a>
+            <a href="#baby-gift" class="gift-collection__nav__pc__link">
+                出産祝い
+                <span class="gift-collection__nav__pc__arrow"></span>
+            </a>
+            <a href="#mini-gift" class="gift-collection__nav__pc__link">
+                プチギフト
+                <span class="gift-collection__nav__pc__arrow"></span>
+            </a>
         </nav>
+        
         <nav class="gift-collection__nav__sp">
             <div class="gift-collection__nav__sp__box">
-                <select class="gift-collection__nav__sp__select">
-                    <option value="sction01" selected>ホリデーギフト</option>
-                    <option value="sction02">引越し祝い</option>
-                    <option value="sction03">結婚祝い</option>
-                    <option value="sction04">出産祝い</option>
-                    <option value="sction05">プチギフト</option>
+                <select id="giftNavSelect" class="gift-collection__nav__sp__select">
+                    <option value="holiday-gift" selected>ホリデーギフト</option>
+                    <option value="moving-gift">引越し祝い</option>
+                    <option value="marriage-gift">結婚祝い</option>
+                    <option value="baby-gift">出産祝い</option>
+                    <option value="mini-gift">プチギフト</option>
                 </select>
                 <div class="gift-collection__nav__sp__arrow"></div>
             </div>
         </nav>
     </section>
-    <section class="gift-collection__section holiday__top">
+    <section id="holiday-gift" class="gift-collection__section holiday__top">
         <div class="gift-collection__section__head holiday__head">
             <div class="gift-collection__section__head__inner holiday__head__inner">
                 <img src="image/holiday01.jpeg" alt="ホリデーギフト">
@@ -74,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="gift-collection__section holiday__top colorSection">
+    <section id="moving-gift" class="gift-collection__section holiday__top colorSection">
         <div class="gift-collection__section__head holiday__head">
             <div class="gift-collection__section__head__inner holiday__head__inner">
                 <div class="gift-collection__sectio__head__textbox">
@@ -90,7 +111,7 @@
                 <img src="image/moving01.jpeg" alt="引越し祝い">
             </div>
     </section>
-    <section class="gift-collection__section marriage__top">
+    <section id="marriage-gift" class="gift-collection__section marriage__top">
         <div class="gift-collection__section__head holiday__head">
             <div class="gift-collection__section__head__inner holiday__head__inner">
                 <img src="image/marriage.jpeg" alt="結婚ギフト">
@@ -107,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="gift-collection__section colorSection">
+    <section id="baby-gift" class="gift-collection__section colorSection">
         <div class="gift-collection__section__head">
             <div class="gift-collection__section__head__inner">
                 <div class="gift-collection__sectio__head__textbox">
@@ -123,7 +144,7 @@
                 <img src="image/childbirth.jpeg" alt="出産祝い">
             </div>
     </section>
-    <section class="gift-collection__section">
+    <section id="mini-gift" class="gift-collection__section">
         <div class="gift-collection__section__head">
             <div class="gift-collection__section__head__inner">
                 <img src="image/minigift.jpeg" alt="プチギフト">
@@ -152,7 +173,7 @@
                         <br>ギフトバッグ（手提げ紙袋1枚付き）¥330(税込)
                         <br>ラッピングはカートページにてお選びいただけます。
                     </p>
-                    <a href="/" class="viewlink">VIEW ALL</a>
+                    <a href="#" class="viewlink">VIEW ALL</a>
                 </div>
                 <img src="image/wrapping.jpeg" alt="出産祝い">
             </div>
@@ -184,10 +205,8 @@
                     申し訳ございません。熨斗の対応はしておりません。
                 </div>
             </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </section>    
     <footer class="l-footer">
         <div class="l-footer__wrap">
             <div class="l-footer__wrap__left">
@@ -223,5 +242,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

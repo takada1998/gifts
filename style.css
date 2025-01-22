@@ -1,6 +1,10 @@
 body{
     width: auto;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .l-header__key{
     position: relative;
     width: 100%;
@@ -147,7 +151,22 @@ body{
     display: flex;
     align-items: center;
     margin: 0 28px;
+    position: relative; /* 矢印をリンク内に配置 */
+    display: inline-flex; /* テキストと矢印を横並びにする */
+    align-items: center;
 }
+
+.gift-collection__nav__pc__arrow {
+    content: "";
+    display: inline-block;
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M0 3l5 5 5-5z' fill='%23989898'/%3E%3C/svg%3E") no-repeat center;
+    background-size: contain;
+}
+
+
 .gift-collection__section__head{
     max-width: 1280px;
     margin-left: auto;
@@ -311,6 +330,24 @@ body{
     color: #555;
     padding-top: 32px;
     padding-bottom: 16px;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease; 
+    padding-top: 0; 
+    padding-bottom: 0;
+    opacity: 0; 
+}
+
+.gift-collection__faq__row__answer.open {
+    max-height: 200px; 
+    padding-top: 16px; 
+    padding-bottom: 16px;
+    opacity: 1;
+}
+
+
+.hidden {
+    display: none;
 }
 .l-footer{
     padding: 2rem 0;
